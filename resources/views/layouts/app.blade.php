@@ -45,7 +45,7 @@
                 <a class="navbar-brand" href="{{ url('/bartender') }}">
                     Bartender
                 </a>
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{!!URL::to('cajauno')!!}">
                     Cajero
                 </a>
             </div>

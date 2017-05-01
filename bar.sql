@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2017 a las 20:09:05
+-- Tiempo de generación: 01-05-2017 a las 08:27:56
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `pedido` (
   `cancelado` tinyint(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `pedido`
@@ -69,7 +69,10 @@ CREATE TABLE IF NOT EXISTS `pedido` (
 INSERT INTO `pedido` (`id`, `mesa`, `producto`, `cantidad`, `entregado`, `cancelado`, `created_at`, `updated_at`) VALUES
 (1, 3, 1, 2, 0, 0, '2017-04-30 17:39:53', '2017-04-30 17:39:53'),
 (2, 3, 1, 2, 0, 0, '2017-04-30 17:40:36', '2017-04-30 17:40:36'),
-(3, 6, 2, 3, 0, 0, '2017-04-30 18:07:29', '2017-04-30 18:06:34');
+(3, 6, 2, 3, 0, 0, '2017-04-30 18:07:29', '2017-04-30 18:06:34'),
+(4, 1, 1, 2, 1, 0, '2017-05-01 06:15:17', '2017-05-01 06:08:35'),
+(5, 1, 2, 1, 1, 0, '2017-05-01 06:25:54', '2017-05-01 06:08:35'),
+(6, 1, 1, 3, 1, 0, '2017-05-01 06:25:57', '2017-05-01 06:08:35');
 
 -- --------------------------------------------------------
 
@@ -128,7 +131,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT de la tabla `pedido`
 --
 ALTER TABLE `pedido`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
